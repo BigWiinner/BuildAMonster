@@ -70,12 +70,12 @@ class Monster extends Phaser.Scene {
         }
         if (this.aKey.isDown) {
             for (const property in my.sprite) {
-                my.sprite[property].setX(my.sprite[property].x + 1);
+                my.sprite[property].setX(my.sprite[property].x - 1);
             }
         }
         if (this.dKey.isDown) {
             for (const property in my.sprite) {
-                my.sprite[property].setX(my.sprite[property].x - 1);
+                my.sprite[property].setX(my.sprite[property].x + 1);
             }
         }
     }
